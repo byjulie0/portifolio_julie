@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+   
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+html{
+    font-family: 'poppins'sans-serif;
+    font-size: 16px;
+}
+:root{
+    --color-primary-1: #9ae6ff;
+    --color-fundo-2: #a5c0ca;
+    --color-detalhes-3: #53a1b9;
+    --color-primary-4: #a586af;
+    --color-icones-5: #32839a;
+    --color-bg-6: #00485c;
+
+
+    --color-neutra-0: #fff;
+    --color-neutra-1: #0b0a18;
+}
+.button {
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    border: 3px solid var(--color-icones-5);
+    background-color: var(--color-icones-5);
+    box-shadow: var(--color-fundo-2);
+}
+  
+.text {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-fundo-2);
+    color: white;
+}
+  
+.arrow path {
+    fill: rgb(19, 19, 19);
+}
+  
+.button:hover .arrow {
+    animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+  
+@keyframes slide-in-left {
+    0% {
+      transform: translateX(-8px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+
+    }
+}
+  
+.button:active {
+    transform: scale(0.97);
+}

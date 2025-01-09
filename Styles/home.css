@@ -14,7 +14,7 @@ html{
 }
 :root{
     --color-primary-1: #9ae6ff;
-    --color-fundo-2: #96afb8;
+    --color-fundo-2: #a5c0ca;
     --color-detalhes-3: #53a1b9;
     --color-primary-4: #a586af;
     --color-icones-5: #32839a;
@@ -23,11 +23,11 @@ html{
 
     --color-neutra-0: #fff;
     --color-neutra-1: #0b0a18;
-
 }
 .social-midia-buttons{
     display: flex;
     gap: 18px;
+    
 }
 .social-midia a{
     display: flex;
@@ -35,7 +35,7 @@ html{
     justify-content: center;
     width: 45px;
     height: 40px;
-    background-color: white;
+    background-color: var(--color-fundo-2);
     font-size: 1.2rem;
     border-radius: 10px;
     color:rgb(50, 131, 154);;
@@ -45,29 +45,38 @@ html{
 .social-midia a:hover{
     box-shadow: 0px 0px 12px 4px  rgb(0, 72, 92);;
 }
-.btn {
-    padding: 1rem 2rem;
-    font-weight: 700;
-    background: rgb(255, 255, 255);
-    color: rgb(50, 131, 154);
+button {
+    --button_radius: 0.75em;
+    --button_color: #a5c0ca;
+    --button_outline_color:#00485c;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
     cursor: pointer;
-    border-radius: 0.5rem;
-    border-bottom: 2px rgb(154, 230, 255);
-    border-right: 2px rgb(154, 230, 255);
-    border-top: 2px solid white;
-    border-left: 2px solid white;
-    transition-duration: 1s;
-    transition-property: border-top, border-left, border-bottom, border-right,
-      box-shadow;
-  }
-  .btn:hover {
-    border-top: 2px solid rgb(154, 230, 255);
-    border-left: 2px solid rgb(154, 230, 255);
-    border-bottom: 2px solid rgb(50, 131, 154);
-    border-right: 2px solid rgb(50, 131, 154);
-    box-shadow: rgb(0, 72, 92,0.4) 5px 5px, rgb(0, 72, 92, O.3) 10px 10px,
-    rgb(0, 72, 92,0.2)15px 15px;
-  }
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+}
+  
+.button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+  
+button:hover .button_top {
+    transform: translateY(-0.33em);
+}
+  
+button:active .button_top {
+    transform: translateY(0);
+}
+  
   
 body{
     background-color: var(--color-neutra-1);
@@ -99,8 +108,8 @@ header{
     transition: 0.4s;
     border: solid var(--color-bg-6);
 }
-.nav-bar:hover{
-    color: var(--color-primary-1);
+.nav-bar a:hover{
+    color: var(--color-neutra-1);
 }
 section{
     min-height: 100vh;
@@ -109,4 +118,29 @@ section{
 }
 span{
     color: var(--color-primary-1);
+}
+.home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+
+}
+.home-img img{
+    display: flex;
+    width: 30%;
+    height: 30%;
+}
+.home-img img:hover{
+    border-radius: solid 2.6rem var(--color-primary-1);
+    border-bottom: solid 2.6rem var(--color-primary-1);
+    border-image: linear-gradient(135deg,transparent 50%, #00485c );
+}
+
+
+
+.home-img{
+    border-radius: solid 2.6rem var(--color-primary-1);
+    border-bottom: solid 2.6rem var(--color-primary-1);
+    border-image: linear-gradient(135deg,transparent 50%, #00485c );
 }
