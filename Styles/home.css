@@ -4,35 +4,33 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    border: none;
-    outline: none;
-    scroll-behavior: smooth;
-}
-html{
     font-family: 'poppins'sans-serif;
-    font-size: 16px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 :root{
     --color-primary-1: #9ae6ff;
     --color-fundo-2: #a5c0ca;
-    --color-detalhes-3: #53a1b9;
-    --color-primary-4: #a586af;
+    --color-detalhes-3: #306e81;
+    --color-primary-4: #006e8d;
     --color-icones-5: #32839a;
     --color-bg-6: #00485c;
 
 
-    --color-neutra-0: #fff;
+    --color-neutra-0: #e5e8f1;
     --color-neutra-1: #0b0a18;
 }
 .social-midia-buttons{
     display: flex;
     gap: 18px;
+   
     
 }
 .social-midia a{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5px;
     width: 45px;
     height: 40px;
     background-color: var(--color-fundo-2);
@@ -50,11 +48,22 @@ button {
     --button_color: #a5c0ca;
     --button_outline_color:#00485c;
     font-size: 17px;
+    flex-wrap: nowrap;
     font-weight: bold;
     border: none;
     cursor: pointer;
     border-radius: var(--button_radius);
     background: var(--button_outline_color);
+}
+.home-container{
+    display: flex;
+    text-align: left;
+    font-size: medium;
+    text-align: justify;
+    
+}
+.title{
+    font-size: 1.5rem;
 }
   
 .button_top {
@@ -88,7 +97,7 @@ header{
     left: 0;
     width: 100%;
     padding: 1.1rem;
-    background-color: aquamarine;
+    background-color: var(--button_color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,13 +112,13 @@ header{
 }
 .nav-bar a{
     font-size: 1.2rem;
-    color: var(--color-neutra-0);
+    color: var(--color-primary-4);
     padding: 0.5rem 1.0rem;
     transition: 0.4s;
-    border: solid var(--color-bg-6);
+    /* border: solid var(--color-bg-6); */
 }
 .nav-bar a:hover{
-    color: var(--color-neutra-1);
+    color: var(--color-neutra-0);
 }
 section{
     min-height: 100vh;
@@ -129,7 +138,11 @@ span{
 .home-img img{
     display: flex;
     width: 30%;
-    height: 30%;
+    height: 40%;
+    box-shadow: 10px 10px 10px var(--color-bg-6);
+    border-radius: solid 2.6rem var(--color-primary-1);
+    border-bottom: solid 2.6rem var(--color-primary-1);
+    border-image: linear-gradient(135deg,transparent 50%, #00485c );
 }
 .home-img img:hover{
     border-radius: solid 2.6rem var(--color-primary-1);
@@ -137,10 +150,15 @@ span{
     border-image: linear-gradient(135deg,transparent 50%, #00485c );
 }
 
+.sobre-mim{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
 
-
-.home-img{
-    border-radius: solid 2.6rem var(--color-primary-1);
-    border-bottom: solid 2.6rem var(--color-primary-1);
-    border-image: linear-gradient(135deg,transparent 50%, #00485c );
+}
+.sobre-img img {
+    display: flex;
+    width: 30%;
+    height: 30%;
 }
