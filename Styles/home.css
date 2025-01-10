@@ -35,7 +35,6 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    /* border: solid var(--color-bg-6); */
     box-shadow: 5px 5px 8px var(--color-bg-6);
 }
 .logo{
@@ -63,12 +62,12 @@ header{
 .home-container{
     display: flex;
     text-align: left;
-    font-size: medium;
     text-align: justify;
      
 }
-.title{
+.title-inicio{
     font-size: 1.5rem;
+    text-align: justify;
 }
           
 .btn-contato{
@@ -142,22 +141,36 @@ button:active .button_top {
 
 }
 
-
-
-
-
-
-
-
-
 section{
     min-height: 100vh;
     padding: 6rem 6rem 2rem;
-    border: solid var(--color-bg-6);
 }
 span{
     color: var(--color-primary-1);
 }
+
+.skills-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.skills-container, .skills-box{
+    padding: 1rem  1rem 2.5rem;
+    border-radius: 0.5rem;
+    border: solid 0.5rem var(--color-detalhes-3);
+    background-color: var(--color-fundo-2);
+    transition: 0.5s ease;
+
+}
+.skills-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: .5rem;
+    margin-bottom: 1rem;
+}
+
 
 
 
@@ -177,31 +190,37 @@ span{
 }
 .sobre-img img {
     display: flex;
-    width: 30%;
-    height: 30%;
+    width: 50%;
+    height: 50%;
+    box-shadow: 12px 12px 10px var(--color-bg-6);
+
 }
-
-
-
-
+.sobre-mim-content{
+    font-size: 1.3rem;
+    text-align: justify;
+}
 .social-midia-footer a{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
-    width: 45px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color: var(--color-fundo-2);
-    font-size: 1.2rem;
-    border-radius: 10px;
-    color:rgb(50, 131, 154);;
-    box-shadow: rgb(154, 230, 255);;
+    font-size: 1rem;
+    border-radius: 5px;
+    color:#32839a;;
+    box-shadow: #9ae6ff;;
     transition: box-shadow 0.3 ease;
 
 }
 .social-midia-footer a:hover{
     box-shadow: 0px 0px 12px 4px  rgb(0, 72, 92);
 }
-.social-midia-{
+.social-midia-footer{
     display: flex;
-    gap: 18px;
+    gap: 16px;
+    
+    
+
+}
