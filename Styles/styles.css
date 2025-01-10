@@ -1,0 +1,16 @@
+@import url('home.css');
+
+
+:root{
+    --color-primary-1: rgb(154, 230, 255);
+    --color-primary-2: #96afb8;
+    --color-primary-3: rgb(83, 161, 185);
+    --color-primary-4: rgb(165, 134, 175);
+    --color-primary-5: rgb(50, 131, 154);
+    --color-primary-6: rgb(0, 72, 92);
+
+
+    --color-neutra-0: #fff;
+    --color-neutra-1: #1d1d1d;
+
+}
