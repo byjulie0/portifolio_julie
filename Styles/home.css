@@ -1,28 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-   
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family: 'poppins'sans-serif;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-}
-:root{
-    --color-primary-1: #9ae6ff;
-    --color-fundo-2: #a5c0ca;
-    --color-detalhes-3: #306e81;
-    --color-primary-4: #006e79;
-    --color-icones-5: #32839a;
-    --color-bg-6: #00485c;
+@import url(styles.css);
 
-
-    --color-neutra-0: #e5e8f1;
-    --color-neutra-1: #000000;
-}
 body{
     background-color: var(--color-neutra-1);
-    color: var(--color-primary-4);
+    color: var(--color-primary-5);
 }
 header{
     position: fixed;
@@ -30,22 +10,30 @@ header{
     left: 0;
     width: 100%;
     padding: 1.1rem;
-    background-color: var(--button_color);
+    background-color: var(--color-primary-1);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    box-shadow: 5px 5px 8px var(--color-bg-6);
+    box-shadow: 5px 5px 8px var(--color-bg-7);
+}
+section{
+    min-height: 100vh;
+    padding: 6rem 6rem 2rem;
+}
+.texto{
+    color: var(--color-primary-1);
+    font-size: 30px;
 }
 .logo{
     font-size: 1.7rem;
-    color: var(--color-primary-4);
+    color: var(--color-primary-5);
     font-weight: 600;
     cursor: default;
 }
 .nav-bar a{
     font-size: 1.2rem;
-    color: var(--color-primary-4);
+    color: var(--color-primary-5);
     padding: 0.5rem 1.0rem;
     transition: 0.4s;
 }
@@ -55,25 +43,20 @@ header{
 
 .home{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
 }
-.home-container{
-    display: flex;
-    text-align: left;
-    text-align: justify;
-     
-}
-.title-inicio{
-    font-size: 1.5rem;
+.title{
+    font-size: 1.3rem;
     text-align: justify;
 }
           
 .btn-contato{
-    display:flex ;
-    flex-direction: column;
-    background-color: brown;
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    
     
 }
 
@@ -110,8 +93,7 @@ button:active .button_top {
 }
 .social-midia{
     display: flex;
-    gap: 16px;
-    
+    gap: 16px;  
     
 }
 .social-midia a{
@@ -135,11 +117,19 @@ button:active .button_top {
     display: flex;
     width: 40%;
     height: 40%;
-    box-shadow: 12px 12px 10px var(--color-bg-6);
+    box-shadow: 12px 12px 10px var(--color-bg-7);
     position: relative;
     float: right;
 
 }
+
+
+
+
+
+
+
+
 
 section{
     min-height: 100vh;
@@ -149,35 +139,40 @@ span{
     color: var(--color-primary-1);
 }
 
-.skills-container{
+.area-cards{
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 32px;
 }
-.skills-container, .skills-box{
-    padding: 1rem  1rem 2.5rem;
-    border-radius: 0.5rem;
-    border: solid 0.5rem var(--color-detalhes-3);
-    background-color: var(--color-fundo-2);
-    transition: 0.5s ease;
-
-}
-.skills-box{
+.skills-card{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    min-height: .5rem;
-    margin-bottom: 1rem;
+    background-color: var(--color-fundo-2) transparent 50;
+    border-radius: 20px;
+    border: solid 0.20rem var(--color-primary-1);
+    gap: 20px;
+    padding: 100px;
+    position: relative;
+    width: 150px;
+    justify-content: space-between;
+    transition: 0.5s ease;
+    
 }
-
-
-
-
-
-
-
-
+.skills-card:hover{
+  background-color: #d3e1e6d8;
+  box-shadow: 5px 5px 0px  var(--color-bg-7);
+}
+.card-icone {
+    display: flex;
+    font-size: 3.563rem;
+}
+.card-title{
+    font-size: 25px;
+}
 
 
 
@@ -192,20 +187,21 @@ span{
     display: flex;
     width: 50%;
     height: 50%;
-    box-shadow: 12px 12px 10px var(--color-bg-6);
+    box-shadow: 12px 12px 10px var(--color-bg-7);
 
 }
 .sobre-mim-content{
     font-size: 1.3rem;
     text-align: justify;
+
 }
 .social-midia-footer a{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background-color: var(--color-fundo-2);
     font-size: 1rem;
     border-radius: 5px;
@@ -219,8 +215,9 @@ span{
 }
 .social-midia-footer{
     display: flex;
-    gap: 16px;
-    
-    
-
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
 }

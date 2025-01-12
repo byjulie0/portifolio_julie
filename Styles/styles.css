@@ -1,16 +1,26 @@
-@import url('home.css');
-
+@import url(home.css);
+@import url(contato.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+   
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'poppins'sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
 
 :root{
-    --color-primary-1: rgb(154, 230, 255);
-    --color-primary-2: #96afb8;
-    --color-primary-3: rgb(83, 161, 185);
-    --color-primary-4: rgb(165, 134, 175);
-    --color-primary-5: rgb(50, 131, 154);
-    --color-primary-6: rgb(0, 72, 92);
+    --color-primary-1: #9ae6ff;
+    --color-fundo-2: #a5c0ca;
+    --color-fundoDois-3:#a5c0ca86;
+    --color-detalhes-4: #306e81;
+    --color-primary-5: #006e79;
+    --color-icones-6: #32839a;
+    --color-bg-7: #00485c;
 
 
-    --color-neutra-0: #fff;
-    --color-neutra-1: #1d1d1d;
-
+    --color-neutra-0: #ffffff;
+    --color-neutra-1: #000000;
 }
