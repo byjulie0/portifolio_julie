@@ -157,11 +157,13 @@ button:active .button_top {
     font-size: 25px;
 }
 .projeto-container{
+    width: 100%;
     display: grid;
     gap: 1.2rem;
 
 }
 .projeto-box{
+    width: 100%;
     position: relative;
     border-radius: 0.6rem;
     box-shadow: 0 0 2.6rem var(--color-bg-7);
@@ -176,13 +178,13 @@ button:active .button_top {
     transform: scale(1.1);
 
 }
-.projeto-box .projeto-layer{
+.projeto-layer{
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: linear-gradient (transparent, var(--color-primary-1));
+    height: 60%;
+    background: linear-gradient(transparent, #9ae6ff);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,13 +204,14 @@ button:active .button_top {
 
 }
 .projeto-layer a{
+    margin-top: 60px;
+    width: 100%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 3rem;
     height: 3rem;
-    background-color: red;
-    border-radius: 50%;
+    /* background-color: green; */
 }
 
 .sobre-mim{
