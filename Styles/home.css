@@ -21,6 +21,9 @@ section{
     min-height: 100vh;
     padding: 6rem 6rem 2rem;
 }
+span {
+    color: var(--color-primary-1);
+}
 .texto{
     color: var(--color-primary-1);
     font-size: 30px;
@@ -55,11 +58,8 @@ section{
 .btn-contato{
     margin-top: 40px;
     display: flex;
-    gap: 20px;
-    
-    
+    gap: 20px;  
 }
-
 button {
     --button_radius: 0.75em;
     --button_color: #a5c0ca;
@@ -122,23 +122,6 @@ button:active .button_top {
     float: right;
 
 }
-
-
-
-
-
-
-
-
-
-section{
-    min-height: 100vh;
-    padding: 6rem 6rem 2rem;
-}
-span{
-    color: var(--color-primary-1);
-}
-
 .area-cards{
     width: 100%;
     display: flex;
@@ -173,8 +156,60 @@ span{
 .card-title{
     font-size: 25px;
 }
+.projeto-container{
+    display: grid;
+    gap: 1.2rem;
 
+}
+.projeto-box{
+    position: relative;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 2.6rem var(--color-bg-7);
+    overflow: hidden;
+    display: flex;
+}
+.projeto-box img{
+    width: 100%;
+    transition: 0.5s ease;
+}
+.projeto-box img:hover{
+    transform: scale(1.1);
 
+}
+/* .projeto-box .projeto-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient (transparent, var(--color-primary-1));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.4rem ;
+    transform: translateY(20rem);
+    transition: 0.5s ease;
+
+} */
+.projeto-box:hover .projeto-layer{
+    transform: translateY(0);
+}
+.projeto-layer h4{
+    font-size: 1.8rem;
+    position: absolute;
+
+}
+.projeto-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: red;
+    border-radius: 50%;
+}
 
 .sobre-mim{
     display: flex;
