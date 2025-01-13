@@ -176,7 +176,7 @@ button:active .button_top {
     transform: scale(1.1);
 
 }
-/* .projeto-box .projeto-layer{
+.projeto-box .projeto-layer{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -192,7 +192,7 @@ button:active .button_top {
     transform: translateY(20rem);
     transition: 0.5s ease;
 
-} */
+}
 .projeto-box:hover .projeto-layer{
     transform: translateY(0);
 }
