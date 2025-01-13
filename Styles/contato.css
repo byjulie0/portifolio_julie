@@ -8,8 +8,7 @@
     justify-content: flex-start;
     gap: 12px;
     cursor: pointer;
-    border: 3px solid var(--color-icones-5);
-    background-color: var(--color-icones-5);
+    background-color: var(--color-icones-6);
     box-shadow: var(--color-fundo-2);
 }
   
@@ -46,4 +45,7 @@
   
 .button:active {
     transform: scale(0.97);
+}
+.form-contato{
+    display: flex;
 }
