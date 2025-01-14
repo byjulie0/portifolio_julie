@@ -1,25 +1,21 @@
-@import url(styles.css);
-
 body{
     background-color: var(--color-neutra-1);
-    color: var(--color-primary-5);
+    color: var(--color-primary-6);
 }
 header{
+    padding: 25px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.1rem;
     background-color: var(--color-primary-1);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    box-shadow: 5px 5px 8px var(--color-bg-7);
 }
 section{
     min-height: 100vh;
-    padding: 6rem 6rem 2rem;
 }
 span {
     color: var(--color-primary-1);
@@ -27,16 +23,27 @@ span {
 .texto{
     color: var(--color-primary-1);
     font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
+.texto-span{
+    color: var(--color-primary-1);
+    font-size:30px;
+}
+p{
+    font-size: 20px;
+}
+
 .logo{
     font-size: 1.7rem;
-    color: var(--color-primary-5);
+    color: var(--color-nav-5);
     font-weight: 600;
     cursor: default;
 }
 .nav-bar a{
     font-size: 1.2rem;
-    color: var(--color-primary-5);
+    color: var(--color-nav-5);
     padding: 0.5rem 1.0rem;
     transition: 0.4s;
 }
@@ -50,7 +57,7 @@ span {
     align-items: center;
     gap: 20px;
 }
-.title{
+.title-apresentacao{
     font-size: 1.3rem;
     text-align: justify;
 }
@@ -108,7 +115,7 @@ button:active .button_top {
     border-radius: 10px;
     color:rgb(50, 131, 154);;
     box-shadow: rgb(154, 230, 255);;
-    transition: box-shadow 0.3 ease;
+    transition: 0.3 ease;
 }
 .social-midia a:hover{
     box-shadow: 0px 0px 12px 4px  rgb(0, 72, 92);;
@@ -117,7 +124,7 @@ button:active .button_top {
     display: flex;
     width: 40%;
     height: 40%;
-    box-shadow: 12px 12px 10px var(--color-bg-7);
+    box-shadow: 12px 12px 10px var(--color-bg-8);
     position: relative;
     float: right;
 
@@ -147,7 +154,7 @@ button:active .button_top {
 }
 .skills-card:hover{
   background-color: #d3e1e6d8;
-  box-shadow: 5px 5px 0px  var(--color-bg-7);
+  box-shadow: 5px 5px 0px  var(--color-bg-8);
 }
 .card-icone {
     display: flex;
@@ -160,14 +167,14 @@ button:active .button_top {
     width: 100%;
     display: grid;
     gap: 1.2rem;
-    padding: 15px;
+    margin-top: 30px;
 
 }
 .projeto-box{
     width: 100%;
     position: relative;
     border-radius: 0.6rem;
-    box-shadow: 0 0 2.6rem var(--color-bg-7);
+    box-shadow: 0 0 2.6rem var(--color-bg-8);
     overflow: hidden;
     display: flex;
 }
@@ -225,9 +232,9 @@ button:active .button_top {
 }
 .sobre-img img {
     display: flex;
-    width: 50%;
-    height: 50%;
-    box-shadow: 12px 12px 10px var(--color-bg-7);
+    width: 70%;
+    height: 70%;
+    box-shadow: 12px 12px 10px var(--color-bg-8);
 
 }
 .sobre-mim-content{

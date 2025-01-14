@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: 'poppins'sans-serif;
+    font-family: 'poppins', sans-serif;
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
@@ -16,11 +16,15 @@
     --color-fundo-2: #a5c0ca;
     --color-fundoDois-3:#a5c0ca86;
     --color-detalhes-4: #306e81;
-    --color-primary-5: #006e79;
-    --color-icones-6: #32839a;
-    --color-bg-7: #00485c;
+    --color-nav-5: #006e79;
+    --color-primary-6: #00adbd;
+    --color-icones-7: #32839a;
+    --color-bg-8: #00485c;
 
 
     --color-neutra-0: #ffffff;
     --color-neutra-1: #000000;
+}
+.content{
+    padding: 40px 10%;
 }
