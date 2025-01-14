@@ -211,6 +211,7 @@ button:active .button_top {
     align-items: center;
     width: 3rem;
     height: 3rem;
+    border-radius: 50%;
     /* background-color: green; */
 }
 
@@ -258,4 +259,5 @@ button:active .button_top {
     align-items: center;
     position: absolute;
     right: 0;
+
 }
