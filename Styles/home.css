@@ -20,6 +20,9 @@ section{
 span {
     color: var(--color-primary-1);
 }
+.content{
+    padding: 40px 10%;
+}
 .texto{
     color: var(--color-primary-1);
     font-size: 30px;
@@ -31,10 +34,6 @@ span {
     color: var(--color-primary-1);
     font-size:30px;
 }
-p{
-    font-size: 20px;
-}
-
 .logo{
     font-size: 1.7rem;
     color: var(--color-nav-5);
@@ -269,3 +268,28 @@ button:active .button_top {
     right: 0;
 
 }
+
+p{
+    font-size: 20px;
+}
+
+@media screen and (max-width:1020px){
+    .nav-bar{
+        display: none;
+    }
+    .projeto{
+        margin-top: 80px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .home-img, .sobre-img{
+        flex-direction: column;
+    }
+
+    
+}
+
