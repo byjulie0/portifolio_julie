@@ -20,9 +20,9 @@ section{
 span {
     color: var(--color-primary-1);
 }
-/* .content{
+.content{
     padding: 40px 10%;
-} */
+}
 .texto{
     color: var(--color-primary-1);
     font-size: 30px;
@@ -40,7 +40,16 @@ span {
     font-weight: 600;
     cursor: default;
 }
-.nav-bar a{
+.nav-bar-responsive {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-primary-1);
+}
+.nav-bar a, .nav-bar-responsive a{
     font-size: 1.2rem;
     color: var(--color-nav-5);
     padding: 0.5rem 1.0rem;
@@ -121,8 +130,8 @@ button:active .button_top {
 }
 .home-img img{
     display: flex;
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 50%;
     box-shadow: 12px 12px 10px var(--color-bg-8);
     position: relative;
     float: right;
@@ -153,7 +162,7 @@ button:active .button_top {
 }
 .skills-card:hover{
   background-color: #d3e1e6d8;
-  box-shadow: 5px 5px 0px  var(--color-bg-8);
+  box-shadow: 6px 6px 0px  var(--color-bg-8);
 }
 .card-icone {
     display: flex;
@@ -266,9 +275,7 @@ button:active .button_top {
     align-items: center;
     position: absolute;
     right: 0;
-
 }
-
 p{
     font-size: 20px;
 }
@@ -295,17 +302,14 @@ p{
 }
 
 
-@media screen and (min-width: 0px){
+@media (min-width: 0px){
     .menu-hamburguer{
         display: block;
     }
     .nav-bar{
         display: none;
     }
-    header{
-        background-color: red;
-    }
-    .nav-bar-responsive{
+    .nav-bar-responsive a {
         display: block;
         font-size: 1.2rem;
         margin: 0.5rem 0;
@@ -321,15 +325,16 @@ p{
 
     }
     .sobre-img{
-        width: 88%;
-        max-width: 88%
+        width: 80%;
+        max-width: 80%
     }
     .home{
-        align-items: center;
+        flex-direction: column;
 
     }
     .home-img{
-        width: 88%%;
+        margin-top: 50px;
+        width: 120%;
         display: flex;
         justify-content: center;
     }
@@ -341,56 +346,103 @@ p{
         justify-content: center;
         display: flex;
     }
+    .content{
+        padding: 0;
+    }
+    .home-container h1{
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 1.3;
+    }
+    .sobre-mim-content p{
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 1.3;
+    }
+    .projeto-box{
+        width: 100%;
+    }
+
+
 }
+
 @media screen and (min-width: 576px){
-    header{
-        background-color: green;
+    .home-img{
+        margin-top: 50px;
+        width: 100%;
+        height: 100%;
     }
-}
-@media screen and (min-width: 768px){
-    header{
-        background-color: blue;
+    .sobre-img{
+        width: 60%;
+        height: 60%;
     }
-}
-@media screen and (min-width: 992px){
-    header{
-        background-color: magenta;
+    .sobre-mim-content p{
+        font-size: 1.0rem;
+        font-weight: 700;
+        line-height: 1.3;
     }
-}
-@media screen and (min-width: 1200px){
-    header{
-        background-color: maroon;
-    }
-}
+    
 
-
-
-
-
-
-
-
-
-/* @media screen and (max-width:1020px){
+} 
+/* TAMANHO TABLET */
+@media screen and (min-width: 768px){ 
     .menu-hamburguer{
-        display: block;
-    }
-    .nav-bar{
         display: none;
     }
-    .projeto{
-        margin-top: 80px;
+    .nav-bar{
+        display: block;
     }
-    p{
-        font-size: 15px;
+    .nav-bar-responsive, .nav-bar-responsive a{
+        display: none;
     }
-    .content{
-        flex-direction: column;
+    .home, .sobre-mim{
+        flex-direction: row;
+       justify-content: space-between;
     }
-    .home-img, .sobre-img{
-        flex-direction: column;
+    .home-img{
+        max-width: 35%;
     }
-
+    .sobre-img{
+        width: 180%;
+       
+    }
+    .home-container .sobre-mim-content{
+        width: 50%;
+    }
+    .sobre-mim-content p{
+        font-size: 0.97rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+    .home-container h1{
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1;
+    }
     
 }
- */
+@media screen and (min-width: 992px){
+    .skills{
+        flex-direction: row;
+        gap: 1.2rem;
+    }
+    .home-container h1{
+        font-size: 1.3rem;
+        font-weight: 700;
+        line-height: 1.3;
+    }
+    .sobre-mim-content p{
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 1.3;
+    }
+}
+
+
+
+
+
+
+
+
+
